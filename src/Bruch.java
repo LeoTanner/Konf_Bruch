@@ -37,9 +37,10 @@ public class Bruch {
         *   => Selbige auch für denominator
         *  Retournieren Sie ihre neue Bruch-Variable
         * */
-
-
-        return null;
+        Bruch br1 = new Bruch(numerator, denominator);
+        br1.numerator = br1.numerator * b2.numerator;
+        br1.denominator = br1.denominator * b2.denominator;
+        return br1;
     }
 
     public Bruch multiplicate(Bruch b2,  Bruch b3) {
