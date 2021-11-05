@@ -46,6 +46,15 @@ public class Bruch {
     public Bruch multiplicate(Bruch b2,  Bruch b3) {
         // TODO: Multiplizieren Sie den eigenen Bruch mit b2 und b3
 
-        return null;
+        Bruch br1 = new Bruch(numerator, denominator);
+        br1.numerator = br1.numerator * b2.numerator;
+        br1.denominator = br1.denominator * b2.denominator;
+
+        br1.numerator = br1.numerator * b3.numerator;
+        br1.denominator = br1.denominator * b3.denominator;
+
+
+        return br1;
+
     }
 }
